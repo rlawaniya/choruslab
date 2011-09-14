@@ -107,35 +107,35 @@ $(document).ready(function() {
         <td>
         <div class="eff">
 	<img src="images/design_studio.jpg" alt="Test 1" title="" width="198" height="185" />
-	<div class="caption"><a href="http://www.queness.com" class="header">Night Club</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
+	<div class="caption"><a href="http://www.queness.com" class="header">design studio</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
 </div>
         
         </td>
         <td>
          <div class="eff">
 	<img src="images/website_development.jpg" alt="Test 1" title="" width="198" height="185" />
-	<div class="caption"><a href="http://www.queness.com" class="header">Night Club</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
+	<div class="caption"><a href="http://www.queness.com" class="header">website development</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
 </div>
         
         </td>
         <td>
          <div class="eff">
 	<img src="images/software_development.jpg" alt="Test 1" title="" width="198" height="185" />
-	<div class="caption"><a href="http://www.queness.com" class="header">Night Club</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
+	<div class="caption"><a href="http://www.queness.com" class="header">software development/a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
 </div>
         
         </td>
         <td>
          <div class="eff">
 	<img src="images/mobile_development.jpg" alt="Test 1" title="" width="198" height="185" />
-	<div class="caption"><a href="http://www.queness.com" class="header">Night Club</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
+	<div class="caption"><a href="http://www.queness.com" class="header">mobile development</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
 </div>
         
         </td>
         <td>
          <div class="eff">
 	<img src="images/online_marketing.jpg" alt="Test 1" title="" width="198" height="185" />
-	<div class="caption"><a href="http://www.queness.com" class="header">Night Club</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
+	<div class="caption"><a href="http://www.queness.com" class="header">online marketing</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="test">asd</a></p></div>
 </div>
         
         </td>
