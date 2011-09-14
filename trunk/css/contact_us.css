@@ -1,0 +1,53 @@
+#contact_accordion{
+	width: 400px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#accordion label{
+	clear: both;
+	display: block;
+	width:100px;
+	float:left;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+#accordion input.field{
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	margin-right: 5px;
+	margin-top: 4px;
+	width: 200px;
+	color: white;
+	height: 16px;
+	float: left;
+}
+
+#accordion textarea{
+	float:left;
+	resize:none;
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	margin-right: 5px;
+	margin-top: 4px;
+	width: 200px;
+	color: white;
+}
+
+
+#accordion input.reset,
+#accordion input.send{
+	width: 60px;
+	float:left;
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	margin-right: 5px;
+	margin-top: 4px;
+	color: white;
+}
+
+#accordion .form-post{
+	margin-left: 105px;
+}
