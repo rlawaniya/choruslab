@@ -95,61 +95,164 @@ ddaccordion.init({
 
 <h3 class="menuheader expandable">Design Studio</h3>
 <ul class="categoryitems">
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C1/">Logo Design</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C2/">Print Media</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C4/">Template Design</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">Computer GUI Design</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C5/">Mobile GUI Design</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C7/">Graphic Design</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C8/">Facebook Fan Page</a></li>
-<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C8/">User Interface Design</a></li>
+<li><a href="#div1">Logo Design</a></li>
+<li><a href="#div2">Print Media</a></li>
+<li><a href="#div3">Template Design</a></li>
+<li><a href="#div4">Computer GUI Design</a></li>
+<li><a href="#div5">Mobile GUI Design</a></li>
+<li><a href="#div6">Graphic Design</a></li>
+<li><a href="#div7">Facebook Fan Page</a></li>
+<li><a href="#div8">User Interface Design</a></li>
 </ul>
 
 <h3 class="menuheader expandable">Website Development</h3>
 <ul class="categoryitems">
-<li><a href="http://www.cssdrive.com">CMS Driven Websites</a></li>
-<li><a href="http://www.cssdrive.com/index.php/menudesigns/">E-commerce Application</a></li>
-<li><a href="http://www.cssdrive.com/index.php/news/">Online Stores</a></li>
-<li><a href="http://www.cssdrive.com/index.php/examples/">Application Development</a></li>
-<li><a href="http://www.cssdrive.com/index.php/main/csscompressor/">CRM Development</a></li>
-<li><a href="http://www.dynamicdrive.com/forums/forumdisplay.php?f=6">Website Development</a></li>
-<li><a href="http://www.dynamicdrive.com/forums/forumdisplay.php?f=6">Facebook Application</a></li>
+<li><a href="#div9">CMS Driven Websites</a></li>
+<li><a href="#div10">E-commerce Application</a></li>
+<li><a href="#div11">Online Stores</a></li>
+<li><a href="#div12">Application Development</a></li>
+<li><a href="#div13">CRM Development</a></li>
+<li><a href="#div14">Website Development</a></li>
+<li><a href="#div15">Facebook Application</a></li>
 </ul>
 
 <h3 class="menuheader expandable">Software Development</h3>
 <ul class="categoryitems">
-<li><a href="http://www.javascriptkit.com/cutpastejava.shtml" >Automation Software</a></li>
-<li><a href="http://www.javascriptkit.com/javatutors/">MAC Software</a></li>
-<li><a href="http://www.javascriptkit.com/jsref/">Windows Software</a></li>
-<li><a href="http://www.javascriptkit.com/domref/">Enterprise Solution</a></li>
-<li><a href="http://www.javascriptkit.com/dhtmltutors/">Custom Softwares</a></li>
-<li><a href="http://www.javascriptkit.com/dhtmltutors/">Game Softwares</a></li>
+<li><a href="#div16" >Automation Software</a></li>
+<li><a href="#div17">MAC Software</a></li>
+<li><a href="#div18">Windows Software</a></li>
+<li><a href="#div19">Enterprise Solution</a></li>
+<li><a href="#div20">Custom Softwares</a></li>
+<li><a href="#div21">Game Softwares</a></li>
 </ul>
 
 
 <h3 class="menuheader expandable">Mobile Development</h3>
 <ul class="categoryitems">
-<li><a href="http://www.javascriptkit.com/cutpastejava.shtml" >Iphone Application</a></li>
-<li><a href="http://www.javascriptkit.com/javatutors/">Android Application </a></li>
-<li><a href="http://www.javascriptkit.com/jsref/">Ipad Application</a></li>
-<li><a href="http://www.javascriptkit.com/domref/">BlackBerry Application </a></li>
-<li><a href="http://www.javascriptkit.com/domref/">Mobile Application </a></li>
-<li><a href="http://www.javascriptkit.com/dhtmltutors/">WAP sites</a></li>
+<li><a href="#div22" >Iphone Application</a></li>
+<li><a href="#div23">Android Application </a></li>
+<li><a href="#div24">Ipad Application</a></li>
+<li><a href="#div25">BlackBerry Application </a></li>
+<li><a href="#div26">Mobile Application </a></li>
+<li><a href="#div27">WAP sites</a></li>
 </ul>
 
 
 <h3 class="menuheader expandable">Online Marketing</h3>
 <ul class="categoryitems">
-<li><a href="http://www.javascriptkit.com/cutpastejava.shtml" >Affiliate Marketing</a></li>
-<li><a href="http://www.javascriptkit.com/javatutors/">Search Engine Marketing</a></li>
-<li><a href="http://www.javascriptkit.com/jsref/">Link Popularity</a></li>
-<li><a href="http://www.javascriptkit.com/domref/">Page Ranking</a></li>
-<li><a href="http://www.javascriptkit.com/dhtmltutors/">Email Marketing</a></li>
+<li><a href="#div28" >Affiliate Marketing</a></li>
+<li><a href="#div29">Search Engine Marketing</a></li>
+<li><a href="#div30">Link Popularity</a></li>
+<li><a href="#div31">Page Ranking</a></li>
+<li><a href="#div32">Email Marketing</a></li>
 </ul>
     
     
     </td>
-    <td width="811">&nbsp;</td>
+    <td width="811">
+	        <div class="scroll"> 
+            
+                <div class="scrollContainer"> 
+                                                    <div class="panel" id="div1" style="float: left; position: relative; " > <article id="stage"><h1>Welcome to choruslabs div0 !! </h1> 
+		                                               </article>
+                									</div>
+													<div class="panel" id="div2" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div1 !!! </h1> 
+                									   </article>
+													</div>
+													<div class="panel" id="div3" style="float: left; position: relative; "><article id="stage"><h1>Welcome to choruslabs div2 !!! </h1> 
+                										 </article>
+												    </div>
+													<div class="panel" id="div4" style="float: left; position: relative; "><article id="stage"><h1>Welcome to choruslabs div3!!! </h1> 
+                										 </article>
+													</div>
+													<div class="panel" id="div5" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div4!!! </h1> 
+                										 </article>
+													</div>
+													<div class="panel" id="div6" style="float: left; position: relative; "><article id="stage"><h1>Welcome to choruslabs div5!!! </h1> 
+                										 </article>
+													</div>
+													<div class="panel" id="div7" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div6!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div8" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div7!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div9" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div8!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div10" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div9!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div11" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div10!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div12" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div11!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div13" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div12!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div14" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div13!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div15" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div14!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div16" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div15!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div17" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div16!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div18" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div17!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div19" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div18!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div20" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div19!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div21" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div20!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div22" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div21!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div23" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div22!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div24" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div23!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div25" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div24!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div26" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div25!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div27" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div26!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div28" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div27!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div29" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div28!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div30" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div29!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div31" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div30!!! </h1> 
+                									 </article>
+													</div>
+													<div class="panel" id="div32" style="float: left; position: relative; " ><article id="stage"><h1>Welcome to choruslabs div31!!! </h1> 
+                									 </article>
+													</div>
+				</div>
+													
+			</div>
+	</td>
   </tr>
 </table>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
