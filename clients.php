@@ -1,0 +1,141 @@
+<?php
+  require './login_panel/login.php';
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/oodomimagerollover.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddaccordion.js"></script>
+
+<link rel="stylesheet" type="text/css" href="login_panel/css/slide.css" media="screen" />
+<script src="login_panel/js/slide.js" type="text/javascript"></script>
+	<?php echo $script; ?>
+
+<script type="text/javascript">
+
+ddaccordion.init({
+	headerclass: "expandable", //Shared CSS class name of headers group that are expandable
+	contentclass: "categoryitems", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+
+</head>
+
+<body>
+
+<?php
+	require './login_panel/login_content.php';
+?>
+
+
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="289" height="106" valign="top"><a href="http://www.choruslab.com/"></a><a href="http://www.choruslab.com/"><img src="images/logo.jpg" width="289" height="106" border="0" /></a></td>
+    <td valign="top" id="header_area">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    
+      <tr>
+        <td align="right" style="padding-top:5px;">
+        <table width="100" border="0" cellspacing="2" cellpadding="2">
+          <tr>
+            <td><div style="height:24px;"></div><!--a href="#"><img src="images/post_your_project.png" width="218" height="24" border="0" /></a--></td>
+            <td><div style="height:24px;"></div><!--a href="#"><img src="images/login.png" width="78" height="24" border="0" /></a--></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+      <tr>
+        <td><table id="Table_01" width="733" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><a href="index.php"><img src="images/nav_01.png" srcover="images/nav_over_01.png" alt="" width="63" height="69" border="0" /></a></td>
+            <td><a href="about.php"><img src="images/nav_02.png" srcover="images/nav_over_02.png" alt="" width="116" height="69" border="0" /></a></td>
+            <td><a href="services.php"><img src="images/nav_03.png" srcover="images/nav_over_03.png" alt="" width="124" height="69" border="0" /></a></td>
+            <td><a href="portfolio.php"><img src="images/nav_04.png" srcover="images/nav_over_04.png" alt="" width="108" height="69" border="0" /></a></td>
+            <td><a href="blog.html"><img src="images/nav_05.png" srcover="images/nav_over_05.png" alt="" width="81" height="69" border="0" /></a></td>
+            <td><a href="clients.php"><img src="images/nav_06.png" srcover="images/nav_over_06.png" alt="" width="94" height="69" border="0" /></a></td>
+            <td><a href="contact_us.php"><img src="images/nav_07.png" srcover="images/nav_over_07.png" alt="" width="149" height="69" border="0" /></a></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="header_bg">&nbsp;</td>
+  </tr>
+</table>
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="213" valign="top" >
+    
+    <div class="arrowlistmenu">
+
+<h3 class="menuheader expandable">Chorus Lab</h3>
+<ul class="categoryitems">
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C1/">About Us</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C2/">Vision & Mission</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C4/">Milestones</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C6/">Leadership Team</a></li>
+<li><a href="http://www.dynamicdrive.com/style/csslibrary/category/C5/">Business Strategy</a></li>
+</ul>
+
+</td>
+    <td width="811" valign="top" style="padding:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" id="container3">
+      <tr>
+        <td valign="top" style="padding:0px 10px 10px 10px;">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top" style="padding:10px;"><p>Infosys Limited (NASDAQ: INFY) was started in 1981 by seven people with US$ 250. Today, we are a global leader in the &quot;next generation&quot; of IT and consulting with revenues of US$ 6.04 billion (LTM March-11).</p>
+          <p>Infosys defines, designs and delivers technology-enabled business solutions for Global 2000 companies. Infosys also provides a complete range of services by leveraging our domain and business expertise and strategic alliances with leading technology providers.</p>
+          <p>Our offerings span business and technology consulting, application services, systems integration, product engineering, custom software development, maintenance, re-engineering, independent testing and validation services, IT infrastructure services and business process outsourcing.</p>
+          <p>Infosys pioneered the Global Delivery Model (GDM), which emerged as a disruptive force in the industry leading to the rise of offshore outsourcing. The GDM is based on the principle of taking work to the location where the best talent is available, where it makes the best economic sense, with the least amount of acceptable risk.</p>
+          <p>Infosys has a global footprint with 64 offices and 63 development centers in US, India, China, Australia, Japan, Middle East, UK, Germany, France, Switzerland, Netherlands, Poland, Canada and many other countries. Infosys and its subsidiaries have 130,820 employees as on March 31, 2011.</p>
+          <p>Infosys takes pride in building strategic long-term client relationships. 98% of our revenues come from existing customers (FY 11).</p></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" bgcolor="#7c8995" style="height:5px;"><img src="images/divider.jpg" width="54" height="5" /></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" bgcolor="#8e9ba7"><table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="padding:10px; background-color:#8e9ba7;border-radius:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="foot">
+          <tr>
+            <td> © 2011<a href="http://www.choruslabs.com/">Chorus Labs</a> Pvt Ltd. </td>
+            <td align="right"><a href="index.php">Home</a> | <a href="Privacy.html">Privacy Policy</a> | <a href="contact_us.php">Contact Us</a></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
