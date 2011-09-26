@@ -18,6 +18,7 @@
 
 <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css">
 <link rel="stylesheet" href="css/contact_us.css">
+<script src="js/contact_us.js"></script>
 
 <script>
 	$(function() {
@@ -28,6 +29,57 @@
 
 <script src="login_panel/js/slide.js" type="text/javascript"></script>
 	<?php echo $script; ?>
+
+<script type="text/javascript">
+	function submit_form(value){
+		var qname, qemail, qsubject, qmsg, qphoneno;
+		qname = $('#name_acc'+value).val();
+		qemail = $('#email_acc'+value).val();
+		qphoneno = $('#phone_acc'+value).val();
+		qmsg = $('#msgContent_acc'+value).val();
+	    qmsg = qmsg.replace(' & ', ' and ');
+
+		if(value == 1){
+			qsubject = "Quote Request";
+		}
+		if(value == 2){
+			qsubject = "Callback Request";
+		}
+		if(value == 3){
+			qsubject = "Feedback Request";
+		}
+		if(value == 4){
+			qsubject = "Job Request";
+		}
+		if(value == 5){
+			qsubject = "Support Request";
+		}
+		if(value == 6){
+			qsubject = "Hello!";
+		}
+
+		var returnVal;
+		returnVal = submit_form_js(qname, qemail, qphoneno, qmsg, value);
+	
+		if(returnVal){
+			var datastr ='name=' + qname + '&mail=' + qemail + '&subject=' + qsubject + '&msg=' + qmsg;
+			if(value == 1 || value == 2){
+				 datastr = datastr + '&phone=' + qphoneno;				
+			}
+
+			//maya: this script is to send email using ajax.
+			$.ajax({	
+					type: "POST",
+					url: "contact_send_mail.php",
+					data: datastr,
+					cache: false,
+					success: function(html){
+						$('div#div_acc'+value).html('<div><p>Your message was sent. We will get back to you shortly.</p></div>');
+					}
+			});
+		}
+	}
+</script>
 
 </head>
 
@@ -133,100 +185,76 @@ India
 			<div id="accordion">
                 <h3><a href="#">Request a quote</a></h3>
                 <div id="div_acc1">
-                    <form method="post" id="form_acc1" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc1" id="name_acc1" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc1" id="email_acc1" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Phone Number:</label><input type="text" name="phone_acc2" id="phone_acc2" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc1" id="msgContent_acc1" cols="" rows=""></textarea>
+                    <label>Name:</label><input type="text" name="name_acc1" id="name_acc1" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc1" id="email_acc1" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Phone Number:</label><input type="text" name="phone_acc1" id="phone_acc1" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc1" id="msgContent_acc1" cols="" rows=""></textarea>
 
-                            <div class="form-post">
-                                <input id="btn_reset_acc1" class="reset" name="btn_reset_acc1" type="reset" value="Clear"/>
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        </fieldset>
-                    </form>
+                    <div class="form-post">
+                        <input id="btn_reset_acc1" class="reset" name="btn_reset_acc1" type="reset" value="Clear"/>
+                        <input class="send" onclick="submit_form(1);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
                 
                 <h3><a href="#">Request a callback</a></h3>
                 <div id="div_acc2">
-                    <form method="post" id="form_acc2" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc2" id="name_acc2" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc2" id="email_acc2" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Phone Number:</label><input type="text" name="phone_acc2" id="phone_acc2" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc2" id="msgContent_acc2" cols="" rows=""></textarea>
-          
-                            <div class="form-post">
-                                <input id="btn_reset_acc1" class="reset" name="btn_reset_acc1" type="reset" value="Clear" />
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        <!--/fieldset-->
-                    </form>
+                    <label>Name:</label><input type="text" name="name_acc2" id="name_acc2" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc2" id="email_acc2" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Phone Number:</label><input type="text" name="phone_acc2" id="phone_acc2" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc2" id="msgContent_acc2" cols="" rows=""></textarea>
+  
+                    <div class="form-post">
+                        <input id="btn_reset_acc1" class="reset" name="btn_reset_acc1" type="reset" value="Clear" />
+                        <input class="send" onclick="submit_form(2);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
                 
                 <h3><a href="#">Provide feedback</a></h3>
                 <div id="div_acc3">
-                    <form method="post" id="form_acc3" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc3" id="name_acc3" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc3" id="email_acc3" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc3" id="msgContent_acc3" cols="" rows=""></textarea>
-                            
-                            <div class="form-post">
-                                <input id="btn_reset_acc3" class="reset" name="btn_reset_acc3" type="reset" value="Clear" />
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        <!--/fieldset-->
-                    </form>
+                    <label>Name:</label><input type="text" name="name_acc3" id="name_acc3" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc3" id="email_acc3" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc3" id="msgContent_acc3" cols="" rows=""></textarea>
+                    
+                    <div class="form-post">
+                        <input id="btn_reset_acc3" class="reset" name="btn_reset_acc3" type="reset" value="Clear" />
+                        <input class="send" onclick="submit_form(3);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
                 
                 <h3><a href="#">Apply for a job</a></h3>
                 <div id="div_acc4">
-                    <form method="post" id="form_acc4" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc4" id="name_acc4" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc4" id="email_acc4" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc4" id="msgContent_acc4" cols="" rows=""></textarea>
-                            
-                            <div class="form-post">
-                                <input id="btn_reset_acc4" class="reset" name="btn_reset_acc4" type="reset" value="Clear" />
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        <!--/fieldset-->
-                    </form>
+                    <label>Name:</label><input type="text" name="name_acc4" id="name_acc4" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc4" id="email_acc4" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc4" id="msgContent_acc4" cols="" rows=""></textarea>
+                    
+                    <div class="form-post">
+                        <input id="btn_reset_acc4" class="reset" name="btn_reset_acc4" type="reset" value="Clear" />
+                        <input class="send" onclick="submit_form(4);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
     
                 <h3><a href="#">Request support</a></h3>
                 <div id="div_acc5">
-                    <form method="post" id="form_acc5" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc5" id="name_acc5" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc5" id="email_acc5" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc5" id="msgContent_acc5" cols="" rows=""></textarea>
-                            
-                            <div class="form-post">
-                                <input id="btn_reset_acc5" class="reset" name="btn_reset_acc5" type="reset" value="Clear" />
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        <!--/fieldset-->
-                    </form>
+                    <label>Name:</label><input type="text" name="name_acc5" id="name_acc5" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc5" id="email_acc5" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc5" id="msgContent_acc5" cols="" rows=""></textarea>
+                    
+                    <div class="form-post">
+                        <input id="btn_reset_acc5" class="reset" name="btn_reset_acc5" type="reset" value="Clear" />
+                        <input class="send" onclick="submit_form(5);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
     
                 <h3><a href="#">Say Hi!</a></h3>
                 <div id="div_acc6">
-                    <form method="post" id="form_acc6" action="#">
-                        <!--fieldset-->
-                            <label>Name:</label><input type="text" name="name_acc6" id="name_acc6" class="field"/>
-                            <label>E-mail:</label><input type="text" name="email_acc6" id="email_acc6" autocorrect="off" autocapitalize="off" class="field"/>
-                            <label>Message Content:</label><textarea name="msgContent_acc6" id="msgContent_acc6" cols="" rows=""></textarea>
-                            
-                            <div class="form-post">
-                                <input id="btn_reset_acc6" class="reset" name="btn_reset_acc6" type="reset" value="Clear" />
-                                <input class="send" onclick="return submit_form();" type="submit" name="" value="Submit" />
-                            </div>
-                        <!--/fieldset-->
-                    </form>
+                    <label>Name:</label><input type="text" name="name_acc6" id="name_acc6" class="field"/>
+                    <label>E-mail:</label><input type="text" name="email_acc6" id="email_acc6" autocorrect="off" autocapitalize="off" class="field"/>
+                    <label>Message Content:</label><textarea name="msgContent_acc6" id="msgContent_acc6" cols="" rows=""></textarea>
+                    
+                    <div class="form-post">
+                        <input id="btn_reset_acc6" class="reset" name="btn_reset_acc6" type="reset" value="Clear" />
+                        <input class="send" onclick="submit_form(6);" type="submit" name="" value="Submit" />
+                    </div>
                 </div>
     
             </div>
