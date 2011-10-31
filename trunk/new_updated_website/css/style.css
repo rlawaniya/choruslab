@@ -1,0 +1,201 @@
+body {
+
+	background-color: #dadfe5;
+	background-repeat:repeat-x;
+	background-attachment: scroll;
+	background-image:url(../images/bg.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-shadow:1px 1px #f2f3f5;
+	color: #606265;
+	position: relative;
+	margin:0px;
+}
+
+a {font-family: Arial, Tahoma, Helvetica, sans-serif; color: #ffffff; font-size: 11px;}
+a:link {text-decoration: none; color: #1a6dba; font-weight:bold;}
+a:visited {text-decoration: none; color:#1a6dba; font-weight:bold;}
+a:hover {text-decoration: none; color:#2492df; font-weight:bold;}
+a:active {text-decoration: none; color:#1a6dba; font-weight:bold;}
+
+
+.foot{font-family: Arial, Helvetica, sans-serif; font-size:11px; font-style:normal; font-weight:normal; color:#eaf2f9; text-shadow:1px 1px #69727b;}
+.foot a {font-family:Arial, Helvetica, sans-serif, sans-serif; color:#CCC; font-size: 11px; font-weight:normal;}
+.foot a:link {font-family:Arial, Helvetica, sans-serif, sans-serif; color:#CCC; font-weight:normal; }
+.foot a:visited { font-family:Arial, Helvetica, sans-serif, sans-serif; color:#CCC; font-weight:normal;}
+.foot a:hover {font-family:Arial, Helvetica, sans-serif, sans-serif; color: #ffffff; font-weight:normal;}
+
+
+.title {font-family: Arial, Helvetica, sans-serif; color:#970fd8; font-size: 24px; font-weight:bold; padding-left:10px;}
+h2{ font:Arial, Helvetica, sans-serif; font-size:18px; color:#0579b3; text-shadow:1px 1px #f2f3f5;}
+.hm_bk{background-color:#e5e9ee; padding:8px; border:1px solid #c1c4c9;}
+.title2 {font-family: Arial, Helvetica, sans-serif; color:#23679c; font-size: 16px; font-weight:bold;}
+.title3 {font-family: Arial, Helvetica, sans-serif; color:#23679c; font-size: 20px; font-weight:bold;}
+
+
+@font-face {
+    font-family: "ady";
+    src: url(http://www.choruslab.com/font/HANZETHR.TTF) format("truetype");
+}
+.title11 { 
+    font-family: Tahoma, Geneva, sans-serif; font-weight:bold; font-size:22px; color:#666; text-shadow:1px 1px #f2f3f5;
+}
+
+
+#header_area{background-image:url(../images/header_area.jpg); background-repeat:no-repeat; width:733px; height:106px;}
+#header_bg{background-image:url(../images/header_bg.jpg); background-repeat:no-repeat; width:1024px; height:357px;}
+#header_bg1{background-image:url(../images/header_bg1.jpg); background-repeat:no-repeat; width:1024px; height:197px;}
+#container1 { border-radius:10px; background-color:#cad1d8; width:494px; height:300px; border:1px solid #b1b7bd;}
+#container2 { border-radius:10px; background-color:#cad1d8; width:100%; height:auto; border:1px solid #b1b7bd;}
+#container3 { border-radius:10px 10px 0px 0px; background-color:#e1e5eb; width:100%; height:auto; border:1px solid #ecf0f4;}
+#container4 { border-radius:10px; background-color:#e1e5eb; width:700px; height:auto; border:1px solid #ecf0f4;}
+
+#white_container { border-radius:10px; background-color:#e8ecf1; width:100%; height:auto; border:1px solid #c3c8cd;}
+#white_container1 { border-radius:10px; background-color:#ffffff; background-image:url(../images/client_strip.jpg); height:100px; width:100%; height:auto; border:1px solid #ffffff; background-repeat: repeat-x;}
+
+#home_border{ background-image:url(../images/home_border.jpg); width:2px; height:100%; background-repeat:repeat-y;}
+
+
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+
+.eff {
+	
+	/* the image size is 126x126, it's adjusted to fit the border as well*/
+	width:198px;
+	height:185px;
+
+	/* important, allow the children object to move inside its parent obj */
+	position:relative;	
+
+	/* important, it hides the moved image */
+	overflow:hidden;
+	
+	/* with the clear class, make it into 3 x 3 layout */
+	float:left;
+	
+	/* IE float bug fix */
+	display:inline;
+	
+	/* styling */
+	margin:1px;
+	font-size:12px;
+}
+
+.eff img {
+	display:block;
+	width:198px;
+	height:185px;
+	
+	/* styling */
+	text-decoration:none;
+	border:0px solid #ccc;
+	background:#ddd;
+
+	/* important, it allows this obj to move by jquery */
+	position:absolute;
+	
+	/* make sure it appears above the caption */
+	z-index:500;
+	
+	cursor:pointer; cursor:hand;
+}
+
+
+.eff .caption {
+	/* should be the same size with the image */
+	width:198px;
+	height:185px;
+	
+	/* styling */
+	background:#dadfe5;
+	border:0px solid #ccc;
+	color:#55657b;
+	
+	/* set the position to 0, 0 and appear under the image */
+	position:absolute;
+	top:0; left:0;
+	z-index:0;
+}
+
+
+/* extra styling*/
+
+.eff .caption a.header {
+	margin:10px 5px 5px 5px;
+	display:block;
+	font-size:14px;	
+	font-weight:700;
+	color:#23547a;
+}
+
+.eff .caption p {
+	margin:5px;	
+}
+
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+
+.arrowlistmenu{
+width: 180px; /*width of accordion menu*/
+}
+
+.arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
+font: bold 12px Arial;
+color:#545a62;
+background: #dadfe5 url(../images/titlebar.png) repeat-x center left;
+margin-bottom: 10px; /*bottom spacing between header and rest of content*/
+text-transform: uppercase;
+padding: 4px 0 4px 10px; /*header text is indented 10px*/
+cursor: hand;
+cursor: pointer;
+}
+
+.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
+background-image: url(../images/titlebar-active.png);
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{
+color: #606265;
+background: url(../images/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+display: block;
+padding: 2px 0;
+padding-left: 19px; /*link text is indented 19px*/
+text-decoration: none;
+font-weight: normal;
+border-bottom: 1px solid #d4dae1;
+font-size:11px;;
+}
+
+.arrowlistmenu ul li a:visited{
+color:#606265;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color:#606265;
+background-color: #e8ebf0;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+
+
+.clear {
+	clear:both;
+}
